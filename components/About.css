@@ -1,0 +1,8 @@
+section h2 {
+  color: var(--primary-color);
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
