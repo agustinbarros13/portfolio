@@ -1,8 +1,62 @@
-section h2 {
-  color: var(--primary-color);
+#about {
+  background: #1f1f1f;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section p {
-  font-size: 1.1rem;
-  line-height: 1.5;
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.about-image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.about-details {
+  color: var(--text-color);
+}
+
+.about-details h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.about-details h3 {
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+
+.about-details p {
+  margin: 0.5rem 0;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills li {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
