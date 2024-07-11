@@ -22,7 +22,7 @@ export default function ToggleSection() {
       <h3>Experiencia</h3>
       <ul>
             <li>Mantenimiento web Evfilms (Valladolid)(2023 - 2024)</li>
-        <li>Desrrollador jr, Amboss (Berlín) (2021 - 2022 )</li>
+            <li>Desrrollador jr, Amboss (Berlín) (2021 - 2022 )</li>
   
       </ul>
     `

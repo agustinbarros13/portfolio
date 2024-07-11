@@ -7,13 +7,13 @@ export default function Projects() {
     <div class="project-list">
       <div class="project">
         <h3>Proyecto 1</h3>
-        <p>Es un ejercicio realizado en las clases en las que se trabaja con JS y Vite. 
-        Este es el link:https://github.com/agustinbarros13/entrega-vite-js
+        <p> Es un proyecto de The power, donde se trabaja con JS y Vite. 
+         Este es el link:  <a href="https://github.com/agustinbarros13/entrega-vite-js" target="_blank">https://github.com/agustinbarros13/entrega-vite-js</a>
         </p>
       </div>
       <div class="project">
         <h3>Proyecto 2</h3>
-        <p>Mantenimiento de Web sensillo.(CSS, JS y HTML) Link:https://www.evfilms.es/productora_de_video_en_valladolid </p>
+        <p>Mantenimiento y desarrollo de una Web sencilla.(CSS, JS y HTML) Link:<a href="https://www.evfilms.es/productora_de_video_en_valladolid" target="_blank">https://www.evfilms.es/productora_de_video_en_valladolid</a> </p>
       </div>
     </div>
   `
