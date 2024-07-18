@@ -1,3 +1,5 @@
+/* toggle-section.css */
+
 #toggle-section {
   background: #1f1f1f;
   padding: 1.5rem;
@@ -39,6 +41,7 @@
 #content ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #content li {
@@ -53,4 +56,21 @@
 #content li:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 850px) {
+  #toggle-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .toggle-buttons {
+    grid-column: span 2;
+  }
+
+  #content {
+    grid-column: span 2;
+  }
 }
