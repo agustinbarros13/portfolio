@@ -1,4 +1,4 @@
-import './ToggleSection.css'
+import '@components/togglesection/ToggleSection.css'
 
 export default function ToggleSection() {
   const section = document.createElement('section')
@@ -21,9 +21,8 @@ export default function ToggleSection() {
     content.innerHTML = `
       <h3>Experiencia</h3>
       <ul>
-            <li>Mantenimiento web Evfilms (Valladolid)(2023 - 2024)</li>
-            <li>Desrrollador jr, Amboss (Berlín) (2021 - 2022 )</li>
-  
+        <li>Mantenimiento web Evfilms (Valladolid)(2023 - 2024)</li>
+        <li>Desarrollador jr, Amboss (Berlín) (2021 - 2022)</li>
       </ul>
     `
   })
@@ -32,7 +31,7 @@ export default function ToggleSection() {
     content.innerHTML = `
       <h3>Estudios</h3>
       <ul>
-      <li>Desarrollo Web - The Power (2024 - Presente)</li>
+        <li>Desarrollo Web - The Power (2024 - Presente)</li>
         <li>Desarrollo Web - AIP Barcelona (2021 - 2022)</li>
       </ul>
     `

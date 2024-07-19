@@ -1,11 +1,19 @@
-import Header from './components/Header.js'
-import About from './components/About.js'
-import Projects from './components/Projects.js'
-import ToggleSection from './components/ToggleSection.js'
-import Footer from './components/Footer.js'
+import Header from '@components/header/Header.js'
+import About from '@components/about/About.js'
+import Projects from '@components/projects/Projects.js'
+import ToggleSection from '@components/togglesection/ToggleSection.js'
+import Footer from '@components/footer/Footer.js'
 
-document.getElementById('header').appendChild(Header())
-document.getElementById('about').appendChild(About())
-document.getElementById('projects').appendChild(Projects())
-document.getElementById('toggle-section').appendChild(ToggleSection())
-document.getElementById('footer').appendChild(Footer())
+document.addEventListener('DOMContentLoaded', function () {
+  const header = Header()
+  const about = About()
+  const projects = Projects()
+  const toggleSection = ToggleSection()
+  const footer = Footer()
+
+  document.body.appendChild(header)
+  document.body.appendChild(about)
+  document.body.appendChild(projects)
+  document.body.appendChild(toggleSection)
+  document.body.appendChild(footer)
+})

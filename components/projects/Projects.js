@@ -1,6 +1,6 @@
-import './Projects.css'
-import project1Image from '../image/proyecto1.jpg'
-import project2Image from '../image/proyecto2.jpg'
+import '@components/projects/Projects.css'
+import project1Image from '@images/proyecto1.jpg'
+import project2Image from '@images/proyecto2.jpg'
 
 const projectsData = [
   {

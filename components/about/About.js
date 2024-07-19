@@ -1,5 +1,5 @@
-import './About.css'
-import myPhoto from '../image/yo.jpg'
+import '@components/about/About.css'
+import myPhoto from '@images/yo.jpg'
 
 function About() {
   const aboutSection = document.createElement('section')

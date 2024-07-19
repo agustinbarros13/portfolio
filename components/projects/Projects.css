@@ -1,0 +1,122 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.project {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover::after {
+  opacity: 1;
+}
+
+.project h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
+}
+
+.project p {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  overflow-y: auto;
+  max-height: 120px;
+}
+
+.project a {
+  color: var(--secondary-color);
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+}
+
+.project-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  transition: transform 0.3s;
+}
+
+.project-image:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 850px) {
+  .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    width: calc(50% - 1rem);
+  }
+
+  .project p {
+    max-height: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #71347e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background: #1f1f1f;
+}
+
+.scroll-container {
+  scrollbar-color: rgba(255, 255, 255, 0.3) #1f1f1f;
+  scrollbar-width: thin;
+}
+
+.scroll-container {
+  max-width: 100%;
+  overflow: auto;
+}
