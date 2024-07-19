@@ -18,6 +18,22 @@ const projectsData = [
   }
 ]
 
+//Intento hacer una funcion para hacer un elemento reutilizable
+function createProjectElement({ title, description, link, image }) {
+  const projectDiv = document.createElement('div')
+  projectDiv.classList.add('project')
+
+  projectDiv.innerHTML = `
+    <h3>${title}</h3>
+    <div class="project-content">
+      <img src="${image}" alt="${title}" class="project-image">
+      <p>${description} Link: <a href="${link}" target="_blank">${link}</a></p>
+    </div>
+  `
+
+  return projectDiv
+}
+
 function Projects() {
   const projectsSection = document.createElement('section')
   projectsSection.setAttribute('id', 'projects')
@@ -26,18 +42,8 @@ function Projects() {
   projectList.classList.add('project-list')
 
   projectsData.forEach((project) => {
-    const projectDiv = document.createElement('div')
-    projectDiv.classList.add('project')
-
-    projectDiv.innerHTML = `
-      <h3>${project.title}</h3>
-      <div class="project-content">
-        <img src="${project.image}" alt="${project.title}" class="project-image">
-        <p>${project.description} Link: <a href="${project.link}" target="_blank">${project.link}</a></p>
-      </div>
-    `
-
-    projectList.appendChild(projectDiv)
+    const projectElement = createProjectElement(project)
+    projectList.appendChild(projectElement)
   })
 
   projectsSection.appendChild(projectList)
